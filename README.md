@@ -4,9 +4,19 @@
 cargo install mdbook
 cargo install mdbook-cmdrun
 mdbook serve
-
 ```
 
+# push
+
+```bash
+# 假设已有一个 origin
+git remote add gitee git@gitee.com:user/project.git
+
+# 一次性推送到两个仓库
+git push origin main
+git push gitee  main
+
+```
 ## 1. 本书简介
 
 本书不仅仅只是一本算法题解书，更是一本算法与数据结构基础知识的讲解书。
