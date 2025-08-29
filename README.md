@@ -2,7 +2,9 @@
 
 ```bash
 cargo install mdbook
+cargo install mdbook-cmdrun
 mdbook serve
+
 ```
 
 ## 1. 本书简介
@@ -71,4 +73,3 @@ mdbook serve
 ### 2.4 致谢
 
 在本书构思与写作阶段，很多朋友给我提出了有益的意见和建议。这些意见和建议令我受益匪浅。感谢在本书著作准备过程中，帮助过我的朋友，以及一起陪我刷题打卡的朋友，还有提供宝贵意见的读者。谢谢诸位。
-

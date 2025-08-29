@@ -25,12 +25,11 @@ copy-fonts = true
 
 # 目录折叠设置
 fold.enable = true
-fold.level = 3 # 默认折叠到第二级
+fold.level = 3     # 默认折叠到第二级
 # search.limit-results = 50  # 增加搜索结果数量
 # title-expand-subsections = false  # 避免标题过长
 # 代码块设置
 # code.hidelines = "~"
-
 
 
 # 搜索设置
@@ -76,3 +75,5 @@ copyable = true
 copy-js = true
 line-numbers = false
 editable = false
+
+[preprocessor.cmdrun]
