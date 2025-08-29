@@ -1,1 +1,6 @@
 book
+
+venv
+
+*.exe
+*.pdb

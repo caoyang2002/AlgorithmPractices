@@ -5,43 +5,46 @@ description = "全面的算法与数据结构学习资料"
 src = "src"
 language = "zh-CN"
 
+
 [build]
 build-dir = "book"
 create-missing = true
 
 [output.html]
 # 站点设置
-site-url = "https://caoyang2002.github.io/AlgoNote/"
-git-repository-url = "https://github.com/caoyang2002/AlgoNote"
+site-url = "https://caoyang2002.github.io/AlgorithmPractices/"
+git-repository-url = "https://github.com/caoyang2002/AlgorithmPractices"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/caoyang2002/AlgoNote/edit/main/src/{path}"
+edit-url-template = "https://github.com/caoyang2002/AlgorithmPractices/edit/main/{path}"
 
 # 主题设置
-default-theme = "navy"
-preferred-dark-theme = "coal"
-curly-quotes = true
+# default-theme = "navy"
+# preferred-dark-theme = "coal"
+#curly-quotes = true
+smart-punctuation = true
 mathjax-support = true
 copy-fonts = true
 
 # 目录折叠设置
 fold.enable = true
-fold.level = 3     # 默认折叠到第二级
+fold.level = 0     # 默认折叠到第二级
 # search.limit-results = 50  # 增加搜索结果数量
 # title-expand-subsections = false  # 避免标题过长
 # 代码块设置
 # code.hidelines = "~"
 
 
-# 搜索设置
-search.enable = true
-search.limit-results = 30
-search.teaser-word-count = 30
-search.use-boolean-and = true
-search.boost-title = 2
-search.boost-hierarchy = 1
-search.boost-paragraph = 1
-search.expand = true
-search.heading-split-level = 3
+[output.html.search]
+enable = true            # 启用搜索功能
+limit-results = 30       # 最大搜索结果数
+teaser-word-count = 30   # 用于搜索结果摘要的字数
+use-boolean-and = true   # 多个搜索词必须全部匹配
+boost-title = 2          # 标题中匹配项的排名提升因子
+boost-hierarchy = 1      # 页面名称中匹配项的排名提升因素
+boost-paragraph = 1      # 文本中匹配项的排名提升因素
+expand = true            # 部分字词将与较长的字词匹配
+heading-split-level = 3  # 将结果链接到标题级别
+copy-js = true           # 包括用于搜索的 Javascript 代码
 
 # 页面标题设置
 title-expand-subsections = true
@@ -52,8 +55,10 @@ title-expand-subsections = true
 
 # 导航栏设置
 [output.html.nav]
-collapse = false
+collapse = true
 sticky = true
+
+
 
 # 打印设置（修正：只使用一种格式）
 [output.html.print]
@@ -69,11 +74,12 @@ custom = """
 <link rel="icon" href="favicon.png" type="image/png">
 """
 
-# 代码块playground设置
 [output.html.playground]
-copyable = true
-copy-js = true
-line-numbers = false
-editable = false
+editable = true         # 允许编辑源代码
+copyable = true          # 包括用于复制代码片段的复制按钮
+copy-js = true           # 包括代码编辑器的 JavaScript
+line-numbers = false     # 显示可编辑代码的行号
+runnable = true          # 显示Rust 代码的运行按钮
 
 [preprocessor.cmdrun]
+

@@ -1,7 +1,7 @@
 # 算法练习
-
 - [语法](DESC.md)
 - [总索引](SUMMARY.md)
+
 # 前言
 - [前言](00_preface/index.md)
   - [创作历程](00_preface/00_01_preface.md)

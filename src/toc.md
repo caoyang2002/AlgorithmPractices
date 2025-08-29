@@ -1,7 +1,7 @@
-# 算法练习
+# 算法与数据结构实践练习
+- [数学](DESC.md)
+- [算法练习](SUMMARY.md)
 
-- [语法](DESC.md)
-- [总索引](SUMMARY.md)
 # 前言
 - [前言](00_preface/index.md)
   - [创作历程](00_preface/00_01_preface.md)
@@ -12,6 +12,7 @@
   - [LeetCode 题解（按分类排序，推荐刷题列表 ）](00_preface/00_06_categories_list.md)
   - [LeetCode 面试最常考 题（按分类排序）](00_preface/00_07_interview_100_list.md)
   - [LeetCode 面试最常考 题（按分类排序）](00_preface/00_08_interview_200_list.md)
+
 
 # 数组
 - [数组](01_array/index.md)
@@ -32,6 +33,7 @@
   - [双指针简介](01_array/01_15_array_two_pointers.md)
   - [滑动窗口算法简介](01_array/01_16_array_sliding_window.md)
 
+
 # 链表
 - [链表](02_linked_list/index.md)
   - [链表简介](02_linked_list/02_01_linked_list_basic.md)
@@ -46,6 +48,7 @@
   - [链表基数排序算法思想](02_linked_list/02_10_linked_list_radix_sort.md)
   - [双指针简介](02_linked_list/02_11_linked_list_two_pointers.md)
 
+
 # 本章内容
 - [本章内容](03_stack_queue_hash_table/index.md)
   - [栈简介](03_stack_queue_hash_table/03_01_stack_basic.md)
@@ -54,6 +57,7 @@
   - [优先队列简介](03_stack_queue_hash_table/03_04_priority_queue.md)
   - [03_05_bidirectional_queue](03_stack_queue_hash_table/03_05_bidirectional_queue.md)
   - [哈希表简介](03_stack_queue_hash_table/03_06_hash_table.md)
+
 
 # 字符串
 - [字符串](04_string/index.md)
@@ -70,6 +74,7 @@
   - [AC 自动机简介](04_string/04_11_ac_automaton.md)
   - [后缀数组简介](04_string/04_12_suffix_array.md)
 
+
 # 树
 - [树](05_tree/index.md)
   - [树简介](05_tree/05_01_tree_basic.md)
@@ -80,6 +85,7 @@
   - [线段树的常见题型](05_tree/05_06_segment_tree_02.md)
   - [树状数组简介](05_tree/05_07_binary_indexed_tree.md)
   - [并查集简介](05_tree/05_08_union_find.md)
+
 
 # 图
 - [图](06_graph/index.md)
@@ -97,6 +103,7 @@
   - [二分图的定义](06_graph/06_12_graph_bipartite_basic.md)
   - [二分图最大匹配简介](06_graph/06_13_graph_bipartite_matching.md)
 
+
 # 算法
 - [算法](07_algorithm/index.md)
   - [枚举算法简介](07_algorithm/07_01_enumeration_algorithm.md)
@@ -105,6 +112,7 @@
   - [回溯算法简介](07_algorithm/07_04_backtracking_algorithm.md)
   - [贪心算法简介](07_algorithm/07_05_greedy_algorithm.md)
   - [位运算简介](07_algorithm/07_06_bit_operation.md)
+
 
 # 动态规划
 - [动态规划](08_dynamic_programming/index.md)
@@ -124,9 +132,11 @@
   - [数位 DP 简介](08_dynamic_programming/08_14_digit_dp.md)
   - [概率 DP 简介](08_dynamic_programming/08_15_probability_dp.md)
 
+
 # 其他
 - [其他](others/index.md)
   - [-12](others/update_time.md)
+
 
 # LeeCode 算法详解释
 - [LeeCode 算法详解释](solutions/index.md)
