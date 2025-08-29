@@ -1,8 +1,17 @@
 # 算法笔记
 
+> https://github.com/rust-lang/mdBook/wiki/Third-party-plugins
+
 ```bash
 cargo install mdbook
 cargo install mdbook-cmdrun
+cargo install mdbook-mermaid
+mdbook-mermaid install
+# 业内目录
+mdbook-pagetoc
+cargo install mdbook-katex
+cargo install mdbook-alerts
+
 mdbook serve
 ```
 

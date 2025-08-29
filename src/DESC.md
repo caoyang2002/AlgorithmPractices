@@ -1,5 +1,9 @@
 查看原作者更新文档： https://algo.itcharge.cn/
 
+> [!NOTE]
+>
+> fsa
+
 # 数学
 
 ```markdown
@@ -45,7 +49,7 @@ fn main() {
     println!("Hello from rust");
 }
 ```
-# make 
+# make
 ```bash
 cmdrun cd tests/cpp && cmake -G Ninja ./ && ninja && call main.exe
 ```
@@ -94,7 +98,7 @@ cmdrun yes 42 | head -n 10 | sed -z 's/\n/  \n/g'
 <!-- cmdrun yes 42 | head -n 10 | sed -z 's/\n/  \n/g' -->
 
 ```bash
-cmdrun seq 1 10 | tail -n 5 | rev 
+cmdrun seq 1 10 | tail -n 5 | rev
 ```
 
 <!-- cmdrun seq 1 10 | tail -n 5 | rev -->
@@ -104,16 +108,16 @@ cmdrun seq 1 10 | tail -n 5 | rev
 # node
 
 ```bash
-cmdrun node tests/node.mjs apples 
+cmdrun node tests/node.mjs apples
 ```
 
 <!-- cmdrun node tests/node.mjs apples  -->
 
 ```bash
-cmdrun node tests/node.mjs bananas 
+cmdrun node tests/node.mjs bananas
 ```
 
-<!-- cmdrun node tests/node.mjs bananas --> 
+<!-- cmdrun node tests/node.mjs bananas -->
 
 
 
@@ -124,27 +128,34 @@ cmdrun node tests/node.mjs bananas
 ```bash
 <!-- cmdrun rustc tests/rust.rs && call rust.exe && del rust.exe && del rust.pdb -->
 ```
+
 <!-- cmdrun rustc tests/rust.rs && call rust.exe && del rust.exe && del rust.pdb -->
 
-## unix
-
 ```bash
-cmdrun rustc tests/rust.rs; ./script; rm script
+cmdrun rustc tests/rust.rs && rm -f ./rust
 ```
-
-<!-- cmdrun rustc tests/rust.rs; ./script; rm script -->
+<!-- cmdrun rustc tests/rust.rs && ./rust && rm -f ./rust -->
 
 ---
 
-# c
+# c lang
 
+## windows
 ```bash
 cmdrun g++ tests/cpp/main.cpp -o c && call c.exe && del c.exe
 ```
 
 <!-- cmdrun g++ tests/cpp/main.cpp -o c && call c.exe && del c.exe-->
 
-# win  输出
+# mac
+
+```bash
+cmdrun g++ tests/cpp/main.cpp -o c && tests/c && rm -f ./c
+```
+
+<!-- cmdrun g++ tests/cpp/main.cpp -o c && ./c && rm -f ./c -->
+
+# bash 输出
 
 ```bash
 cmdrun echo hello && echo world
@@ -153,7 +164,7 @@ cmdrun echo hello && echo world
 <!-- cmdrun echo hello && echo world -->
 
 ```bash
-cmdrun yes 42 | head -n 10 | sed -z 's/\n/  \n/g' 
+cmdrun yes 42 | head -n 10 | sed -z 's/\n/  \n/g'
 ```
 
 <!-- cmdrun yes 42 | head -n 10 | sed -z 's/\n/  \n/g' -->

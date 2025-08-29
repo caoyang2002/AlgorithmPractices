@@ -1,203 +1,564 @@
 # 算法与数据结构
 
-![程序=算法+数据结构](https://qcdn.itcharge.cn/images/202109092112373.png)
+>《算法 + 数据结构 = 程序》 —— Pascal语言之父 Niklaus Emil Wirth
 
-> 数据结构是程序的骨架，而算法则是程序的灵魂。
+<svg viewBox="0 0 1400 500" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1));">
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+            <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:0.95" />
+        </linearGradient>
+        <linearGradient id="programGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#667eea" />
+            <stop offset="100%" style="stop-color:#764ba2" />
+        </linearGradient>
+        <linearGradient id="dataGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4facfe" />
+            <stop offset="100%" style="stop-color:#00f2fe" />
+        </linearGradient>
+        <linearGradient id="algoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fa709a" />
+            <stop offset="100%" style="stop-color:#fee140" />
+        </linearGradient>
+        <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.15"/>
+        </filter>
+        <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+        </filter>
+    </defs>
+    <rect x="30" y="30" width="1200" height="440" rx="30"
+        fill="url(#bgGradient)"
+        stroke="#e2e8f0"
+        stroke-width="2"
+        filter="url(#cardShadow)"/>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f1f5f9" stroke-width="1" opacity="0.2"/>
+    </pattern>
+    <rect x="30" y="30" width="1200" height="440" rx="30" fill="url(#grid)"/>
+    <g transform="translate(80, 125)">
+        <rect width="240" height="250" rx="25"
+            fill="url(#programGradient)"
+            filter="url(#cardShadow)"/>
+        <rect x="0" y="0" width="240" height="80" rx="25"
+            fill="rgba(255,255,255,0.15)"/>
+        <text x="120" y="50"
+            text-anchor="middle"
+            font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+            font-size="32"
+            font-weight="bold"
+            fill="#ffffff"
+            filter="url(#textShadow)">程序</text>
+        <g transform="translate(25, 100)">
+            <g transform="translate(0, 0)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">逻辑处理</text>
+            </g>
+            <g transform="translate(0, 30)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">问题解决</text>
+            </g>
+            <g transform="translate(0, 60)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">系统设计</text>
+            </g>
+            <g transform="translate(0, 90)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">功能实现</text>
+            </g>
+        </g>
+    </g>
+    <g transform="translate(380, 250)">
+        <circle cx="0" cy="0" r="30" fill="#ffffff" stroke="#e2e8f0" stroke-width="3" filter="url(#cardShadow)"/>
+        <text x="0" y="12"
+            text-anchor="middle"
+            font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+            font-size="32"
+            font-weight="bold"
+            fill="#64748b">=</text>
+    </g>
+    <g transform="translate(470, 125)">
+        <rect width="280" height="250" rx="25"
+            fill="url(#dataGradient)"
+            filter="url(#cardShadow)"/>
+        <rect x="0" y="0" width="280" height="80" rx="25"
+            fill="rgba(255,255,255,0.15)"/>
+        <text x="140" y="50"
+            text-anchor="middle"
+            font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+            font-size="28"
+            font-weight="bold"
+            fill="#ffffff"
+            filter="url(#textShadow)">数据结构</text>
+        <g transform="translate(25, 100)">
+            <g transform="translate(0, 0)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">数组 Array</text>
+            </g>
+            <g transform="translate(0, 30)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">链表 LinkedList</text>
+            </g>
+            <g transform="translate(0, 60)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">栈 Stack / 队列 Queue</text>
+            </g>
+            <g transform="translate(0, 90)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">哈希表 / 树 / 图</text>
+            </g>
+        </g>
+    </g>
+    <g transform="translate(800, 250)">
+        <circle cx="0" cy="0" r="25" fill="#ffffff" stroke="#e2e8f0" stroke-width="3" filter="url(#cardShadow)"/>
+        <text x="0" y="8"
+            text-anchor="middle"
+            font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+            font-size="28"
+            font-weight="bold"
+            fill="#64748b">+</text>
+    </g>
+    <g transform="translate(890, 125)">
+        <rect width="280" height="250" rx="25"
+            fill="url(#algoGradient)"
+            filter="url(#cardShadow)"/>
+        <rect x="0" y="0" width="280" height="80" rx="25"
+            fill="rgba(255,255,255,0.15)"/>
+        <text x="140" y="50"
+            text-anchor="middle"
+            font-family="'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+            font-size="28"
+            font-weight="bold"
+            fill="#ffffff"
+            filter="url(#textShadow)">算法</text>
+        <g transform="translate(25, 100)">
+            <g transform="translate(0, 0)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">排序 Sorting</text>
+            </g>
+            <g transform="translate(0, 30)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">搜索 Searching</text>
+            </g>
+            <g transform="translate(0, 60)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">递归 Recursion</text>
+            </g>
+            <g transform="translate(0, 90)">
+                <circle cx="8" cy="8" r="4" fill="rgba(255,255,255,0.8)"/>
+                <text x="25" y="14" font-family="'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="500" fill="#ffffff">动态规划 / 贪心</text>
+            </g>
+        </g>
+    </g>
+</svg>
 
-**《算法 + 数据结构 = 程序》** 是 Pascal 语言之父 [Niklaus Emil Wirth](https://zh.wikipedia.org/wiki/尼克劳斯·维尔特) 所著的经典著作，其书名也成为计算机科学领域广为流传的名言。这句话深刻揭示了算法与数据结构在程序设计中的密切关系。
+# 算法与数据结构入门指南
 
-在正式学习之前，我们首先要搞清楚：什么是算法？什么是数据结构？为什么要学习它们？
+> **核心理念**：算法解决问题的方法，数据结构是数据组织方式
 
-简而言之，**「算法」是解决问题的方法或步骤**。如果把问题看作一个函数，算法就是将输入转化为输出的过程。**「数据结构」则是数据在计算机中的组织方式及其相关操作**。**「程序」就是算法和数据结构的具体实现**。
 
-如果把「程序设计」比作烹饪，「数据结构」就像是食材和调料，「算法」则是不同的烹饪方法或菜谱。不同的食材、调料和烹饪方式可以组合出千变万化的菜肴。同样的原料，不同的人做出来，味道也会大不相同。
 
-为什么要学习算法和数据结构呢？
+## 📊 整体概览
 
-还是以做菜为例。做菜讲究「色香味俱全」，而程序设计则追求为问题选择最合适的「数据结构」，并采用更高效、占用资源更少的「算法」。
+```mermaid
+graph TB
+    subgraph "💻 程序 = 算法 + 数据结构"
+        A[🧮 算法<br/>解决问题的方法]
+        B[📊 数据结构<br/>数据组织方式]
+        C[💾 程序<br/>具体实现]
+    end
 
-学习算法和数据结构，能够帮助我们在编程时从时间复杂度和空间复杂度等角度优化解决方案，提升逻辑思维能力，写出高质量的代码，从而增强编程能力，获得更好的职业发展。
+    A --> C
+    B --> C
 
-当然，正如掌握了食材和烹饪方法并不代表就能做出美味佳肴，学会了算法和数据结构也不意味着就能写出优秀的程序。这需要不断实践、思考和持续学习，才能真正成长为一名优秀的 ~~厨师~~（程序员）。
+    subgraph "🎯 算法特性"
+        A1[📥 输入] --> A2[📤 输出]
+        A2 --> A3[⏱️ 有穷性]
+        A3 --> A4[✅ 确定性]
+        A4 --> A5[⚙️ 可行性]
+    end
+
+    subgraph "📈 算法目标"
+        T1[⚡ 时间效率<br/>运行更快]
+        T2[💾 空间效率<br/>占用更少]
+        T3[✨ 代码质量<br/>正确·可读·健壮]
+    end
+
+    subgraph "🏗️ 数据结构分类"
+        direction TB
+        L1[📐 逻辑结构<br/>元素间关系]
+        P1[💽 物理结构<br/>存储方式]
+
+        L1 --> L2[🔵 集合结构<br/>无关系]
+        L1 --> L3[📏 线性结构<br/>一对一]
+        L1 --> L4[🌳 树形结构<br/>一对多]
+        L1 --> L5[🕸️ 图形结构<br/>多对多]
+
+        P1 --> P2[📋 顺序存储<br/>连续空间]
+        P1 --> P3[🔗 链式存储<br/>指针连接]
+    end
+
+    A --> A1
+    B --> L1
+    B --> P1
+    A --> T1
+
+    classDef algorithmStyle fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef dataStructureStyle fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef programStyle fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+    classDef featureStyle fill:#fff3e0,stroke:#e65100,stroke-width:2px
+
+    class A,A1,A2,A3,A4,A5,T1,T2,T3 algorithmStyle
+    class B,L1,L2,L3,L4,L5,P1,P2,P3 dataStructureStyle
+    class C programStyle
+```
 
 ## 1. 数据结构
 
-> **数据结构（Data Structure）**：具有特定结构特征的数据元素的集合。
+**定义**：具有特定结构特征的数据元素集合，关注数据的组织、存储和操作方式。
 
-简而言之，「数据结构」 就是数据的组织结构，用来组织、存储数据。
+**作用**：提升计算机资源利用效率。例如：操作系统通过B+树索引快速定位文件，而非全盘扫描。
 
-进一步来说，数据结构关注的是数据的逻辑结构、物理结构及其相互关系，并针对这些结构定义相应的操作和算法，确保经过操作后数据依然保持原有的结构特性。
+### 1.1 逻辑结构详解
 
-数据结构的核心作用在于提升计算机资源的利用效率。例如，操作系统想要查找硬盘中「Microsoft Word」的存储位置，如果采用全盘扫描，则效率极低；而通过「B+ 树」索引，可以迅速定位到 `Microsoft Word`，进而快速获取其文件信息和磁盘位置。
+**逻辑结构**：数据元素之间的相互关系
 
-学习数据结构，能够帮助我们理解和掌握数据在计算机中的组织与存储方式，从而为高效编程打下坚实基础。
+```mermaid
+graph TB
+    subgraph "🏗️ 数据逻辑结构"
+        direction TB
 
----
+        subgraph "🔵 集合结构 - 无关系"
+            direction LR
+            C1((A))
+            C2((B))
+            C3((C))
+            C4((D))
+            C5[元素互不相关<br/>类似数学集合]
+        end
 
-通常，我们可以从**「逻辑结构」**和**「物理结构」**两个维度对数据结构进行分类。
+        subgraph "📏 线性结构 - 一对一"
+            direction LR
+            L1((A)) --> L2((B))
+            L2 --> L3((C))
+            L3 --> L4((D))
+            L5[严格的前后关系<br/>数组·链表·栈·队列]
+        end
 
-### 1.1 数据的逻辑结构
+        subgraph "🌳 树形结构 - 一对多"
+            direction TB
+            T1((根))
+            T1 --> T2((左))
+            T1 --> T3((右))
+            T2 --> T4((叶1))
+            T2 --> T5((叶2))
+            T3 --> T6((叶3))
+            T7[层次关系<br/>二叉树·多叉树]
+        end
 
-> **逻辑结构（Logical Structure）**：指数据元素之间的相互关系。
+        subgraph "🕸️ 图形结构 - 多对多"
+            direction TB
+            G1((A)) --> G2((B))
+            G1 --> G3((C))
+            G2 --> G3
+            G2 --> G4((D))
+            G3 --> G4
+            G4 --> G1
+            G5[任意连接<br/>社交网络·地图路径]
+        end
+    end
 
-根据数据元素之间的关系，数据的逻辑结构通常分为以下四类：
+    subgraph "💾 物理存储结构"
+        direction TB
 
-#### 1.1.1 集合结构
+        subgraph "📋 顺序存储"
+            direction LR
+            S1[📦 A] --- S2[📦 B] --- S3[📦 C] --- S4[📦 D]
+            S5[连续内存空间<br/>随机访问快<br/>插入删除慢]
+        end
 
-> **集合结构**：数据元素属于同一个集合，彼此之间没有其他关系。
+        subgraph "🔗 链式存储"
+            direction LR
+            P1[📦 A →] -.-> P2[📦 B →]
+            P2 -.-> P3[📦 C →]
+            P3 -.-> P4[📦 D ∅]
+            P5[分散内存空间<br/>插入删除快<br/>查找访问慢]
+        end
+    end
 
-集合结构中的数据元素是无序且互不相同的，每个元素在集合中只出现一次。这种结构与数学中的「集合」概念非常相似。
+    classDef setStyle fill:#ffebee,stroke:#c62828,stroke-width:2px
+    classDef linearStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef treeStyle fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    classDef graphStyle fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef storageStyle fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
 
-![集合结构](https://qcdn.itcharge.cn/images/20240509150647.png)
+    class C1,C2,C3,C4,C5 setStyle
+    class L1,L2,L3,L4,L5 linearStyle
+    class T1,T2,T3,T4,T5,T6,T7 treeStyle
+    class G1,G2,G3,G4,G5 graphStyle
+    class S1,S2,S3,S4,S5,P1,P2,P3,P4,P5 storageStyle
+```
 
-#### 1.1.2 线性结构
+#### 四种逻辑结构特点
 
-> **线性结构**：数据元素之间存在严格的「一对一」关系。
+| 结构类型 | 关系特征 | 典型应用 | 特点 |
+|---------|---------|---------|-----|
+| 🔵 **集合结构** | 无关系 | 数学集合 | 元素唯一，无序 |
+| 📏 **线性结构** | 一对一 | 数组、栈、队列 | 严格前后关系 |
+| 🌳 **树形结构** | 一对多 | 文件系统、决策树 | 层次关系 |
+| 🕸️ **图形结构** | 多对多 | 社交网络、交通网 | 复杂网络关系 |
 
-在线性结构中，除第一个元素和最后一个元素外，每个数据元素都仅与前后各一个元素相邻。常见的线性结构有：数组、链表，以及基于它们实现的栈、队列等。此外，哈希表在底层实现时也常依赖数组或链表等线性结构。
+### 1.2 物理结构对比
 
-![线性结构](https://qcdn.itcharge.cn/images/20240509150709.png)
-
-#### 1.1.3 树形结构
-
-> **树形结构**：数据元素之间存在「一对多」的层次关系。
-
-树形结构最典型的例子是二叉树，其基本形式包括根节点、左子树和右子树，而每个子树又可以递归地包含自己的子树。除了二叉树之外，树形结构还包括多叉树、字典树等多种类型，广泛用于表达具有层级关系的数据。
-
-![树形结构](https://qcdn.itcharge.cn/images/20240509150724.png)
-
-#### 1.1.4 图形结构
-
-> **图形结构**：数据元素之间存在「多对多」的关系。
-
-图形结构是一种比树形结构更为复杂的非线性结构，常用于描述对象之间任意的关联关系。在图结构中，数据元素被称为 **「顶点」**（或 **「结点」**），顶点之间通过 **「边」**（可以是直线或曲线）相连，形成复杂的网络。
-
-与树形结构不同，图形结构允许任意两个顶点之间建立连接，顶点之间的邻接关系没有限制。常见的图结构类型包括：无向图、有向图、连通图等。
-
-![图形结构](https://qcdn.itcharge.cn/images/20240509150831.png)
-
-### 1.2 数据的物理结构
-
-> **物理结构（Physical Structure）**：指数据的逻辑结构在计算机中的具体存储方式。
-
-在计算机中，常见的物理存储结构主要有两种：**顺序存储结构** 和 **链式存储结构**，它们被广泛应用于各类数据结构的实现。
-
-#### 1.2.1 顺序存储结构
-
-> **顺序存储结构（Sequential Storage Structure）**：指将所有数据元素依次存放在一块地址连续的存储空间中，元素之间的逻辑关系通过它们在物理存储上的相对位置来体现。
-
-![顺序存储结构](https://qcdn.itcharge.cn/images/20240509150846.png)
-
-在顺序存储结构中，逻辑上相邻的数据元素在物理地址上也紧密相邻。
-
-顺序存储结构的优点在于：结构简单、易于理解，并且能够高效利用存储空间。其缺点主要包括：必须预先分配一块连续的存储空间，灵活性较差；在插入、删除等需要移动大量元素的操作时，时间效率较低。
-
-#### 2. 链式存储结构
-
-> **链式存储结构（Linked Storage Structure）**：指将数据元素存放在内存中的任意存储单元，这些单元可以是连续的，也可以是不连续的。
-
-![链式存储结构](https://qcdn.itcharge.cn/images/20240509150902.png)
-
-在链式存储结构中，逻辑上相邻的数据元素在物理地址上不要求相邻，实际存储位置是随机的。通常，每个数据元素及其相关信息被组合成一个「链结点」。每个链结点除了存放数据本身外，还包含一个「指针（或引用）」，用于指向下一个逻辑上相邻的链结点。也就是说，数据元素之间的逻辑关系是通过指针来连接和体现的。
-
-链式存储结构的主要优点在于：无需预先分配一整块连续的存储空间，能够根据需要动态申请和释放内存，避免空间浪费；在插入、删除等操作时，通常只需修改指针，效率较高。其缺点是：每个链结点除了存储数据外，还需额外存储指针信息，因此整体空间开销相较于顺序存储结构更大。
+| 存储方式 | 优点 | 缺点 | 适用场景 |
+|---------|-----|-----|---------|
+| **📋 顺序存储** | 随机访问、空间利用率高 | 插入删除慢、需预分配空间 | 频繁查询访问 |
+| **🔗 链式存储** | 插入删除快、动态分配 | 额外指针开销、无法随机访问 | 频繁增删操作 |
 
 ## 2. 算法
 
-> **算法（Algorithm）**：解决特定问题求解步骤的准确而完整的描述，在计算机中表现为一系列指令的集合，算法代表着用系统的方法描述解决问题的策略机制。
+**定义**：解决特定问题的准确而完整的步骤描述。
 
-简而言之，**「算法」** 就是解决问题的具体方法和步骤。
+### 2.1 算法分析与优化
 
-进一步来说，算法是一系列有序的运算步骤，能够为某一类计算问题提供通用的解决方案。对于任意合法输入，算法都能按照既定步骤逐步执行，最终得到正确的输出。算法本身与具体的编程语言无关，可以用 **自然语言、编程语言（如 Python、C、C++、Java 等）**，也可以用 **伪代码或流程图** 等多种方式进行描述。
+```mermaid
+graph TB
+    subgraph "🎯 算法设计原则"
+        direction TB
+        P1[🧮 问题定义<br/>明确输入输出]
+        P2[💡 设计思路<br/>分析解决策略]
+        P3[⚙️ 算法实现<br/>编写具体代码]
+        P4[📊 效率分析<br/>时间空间复杂度]
+        P5[🔧 优化改进<br/>提升性能表现]
 
-下面通过几个例子来直观理解什么是算法。
+        P1 --> P2 --> P3 --> P4 --> P5
+        P5 -.-> P2
+    end
 
-- 示例 1：
+    subgraph "⏱️ 时间复杂度比较"
+        direction LR
+        T1[😊 O(1)<br/>常数时间<br/>直接访问]
+        T2[😌 O(log n)<br/>对数时间<br/>二分查找]
+        T3[🙂 O(n)<br/>线性时间<br/>遍历数组]
+        T4[😐 O(n log n)<br/>线性对数<br/>快速排序]
+        T5[😟 O(n²)<br/>平方时间<br/>冒泡排序]
+        T6[😱 O(2ⁿ)<br/>指数时间<br/>递归斐波那契]
 
-> **问题描述**：
->
-> - 如何从上海前往北京？
->
-> **解决方法**：
->
-> 1. 选择乘坐飞机，速度最快但费用最高。
-> 2. 选择长途汽车，费用最低但耗时最长。
-> 3. 选择高铁或火车，时间和费用都较为适中。
+        T1 -.-> T2 -.-> T3 -.-> T4 -.-> T5 -.-> T6
+    end
 
-- 示例 2：
+    subgraph "🚀 算法优化策略"
+        direction TB
 
-> **问题描述**：
->
-> - 如何计算 $1 + 2 + 3 + \dots + 100$ 的和？
->
-> **解决方法**：
->
-> 1. 依次用计算器从 $1$ 加到 $100$，最终得到 $5050$。
-> 2. 利用高斯求和公式：**和 = (首项 + 末项) × 项数 ÷ 2**，直接计算得 $\frac{(1+100) \times 100}{2} = 5050$。
+        subgraph "时间换空间"
+            TS1[💾 使用更多内存]
+            TS2[⚡ 获得更快速度]
+            TS1 --> TS2
+        end
 
-- 示例 3：
+        subgraph "空间换时间"
+            ST1[⏱️ 使用更多时间]
+            ST2[🗜️ 减少内存占用]
+            ST1 --> ST2
+        end
 
-> **问题描述**：
->
-> - 如何将一个包含 $n$ 个整数的数组按升序排列？
->
-> **解决方法**：
->
-> 1. 使用冒泡排序对数组进行升序排序。
-> 2. 也可以选择插入排序、归并排序、快速排序等其他排序算法实现升序排列。
+        subgraph "算法改进"
+            A1[🔄 减少重复计算<br/>动态规划·记忆化]
+            A2[✂️ 分而治之<br/>递归·分治算法]
+            A3[🎯 贪心策略<br/>局部最优解]
+            A4[🗂️ 预处理优化<br/>排序·索引·哈希]
+        end
+    end
 
-上述三个示例中的解决方法都属于算法。从上海到北京的出行方案是一种算法，对 $1$ 到 $100$ 求和的方法是一种算法，对数组排序的方法同样是一种算法。可以看出，对于同一个问题，往往存在多种不同的算法可供选择。
+    subgraph "📈 性能评估标准"
+        direction LR
+        E1[✅ 正确性<br/>算法结果准确]
+        E2[📚 可读性<br/>代码易于理解]
+        E3[🛡️ 健壮性<br/>异常处理完善]
+        E4[⚡ 时间效率<br/>运行速度快]
+        E5[💾 空间效率<br/>内存占用少]
 
-### 2.1 算法的基本特性
+        E1 --> E2 --> E3 --> E4 --> E5
+    end
 
-算法本质上是一组有序的运算步骤，用于解决特定的问题。除此之外，**算法** 还必须具备以下五个基本特性：
+    classDef processStyle fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
+    classDef timeStyle fill:#f1f8e9,stroke:#689f38,stroke-width:2px
+    classDef optimizeStyle fill:#fff8e1,stroke:#fbc02d,stroke-width:2px
+    classDef evaluateStyle fill:#fce4ec,stroke:#e91e63,stroke-width:2px
 
-1. **输入**：算法需要接收外部提供的信息作为处理对象，这些信息称为输入。一个算法可以有零个、一个或多个输入。例如，示例 $1$ 的输入是出发地和目的地（如上海、北京），示例 $3$ 的输入是由 $n$ 个整数构成的数组，而示例 $2$ 针对的是固定问题，可以视为没有输入。
-2. **输出**：算法的执行结果必须有明确的输出，即至少有一个输出结果。比如，示例 $1$ 的输出是最终选择的交通方式，示例 $2$ 的输出是求和的结果，示例 $3$ 的输出是排好序的数组。
-3. **有穷性**：算法必须在有限的步骤内终止，并且能够在合理的时间内完成。如果算法无法在有限时间内结束，就不能称为有效的算法。例如，若五一假期从上海到北京旅游，三天都没决定交通方式，计划就无法实现，这样的「算法」显然不合理。
-4. **确定性**：算法中的每一步操作都必须有明确、唯一的含义，不能存在歧义。也就是说，任何人在相同输入下执行算法，得到的中间过程和最终结果都应一致。
-5. **可行性**：算法的每一步都必须是可执行的，即在现有条件下能够通过有限次数的操作实现，并且可以被计算机程序实现并运行，最终得到正确的结果。
+    class P1,P2,P3,P4,P5 processStyle
+    class T1,T2,T3,T4,T5,T6 timeStyle
+    class TS1,TS2,ST1,ST2,A1,A2,A3,A4 optimizeStyle
+    class E1,E2,E3,E4,E5 evaluateStyle
+```
 
-### 2.2 算法追求的目标
+### 2.2 算法五大特性
 
-研究算法的核心目的，是让我们以更高效的方式解决问题。对于同一个问题，往往存在多种算法可选，而不同算法的“代价”也各不相同。一般来说，优秀的算法应当重点追求以下两个目标：
+| 特性 | 说明 | 示例 |
+|-----|------|------|
+| **📥 输入** | 0个或多个输入 | 排序算法需要数组输入 |
+| **📤 输出** | 至少1个输出 | 排序后的有序数组 |
+| **⏱️ 有穷性** | 有限步骤内终止 | 不能无限循环 |
+| **✅ 确定性** | 每步操作明确唯一 | 相同输入得到相同结果 |
+| **⚙️ 可行性** | 每步都可执行 | 能用程序实现 |
 
-1. **更少的运行时间（更低的时间复杂度）**
-2. **更小的内存占用（更低的空间复杂度）**
+### 2.3 实际应用案例
 
-举例来说，假设计算机执行一条指令需要 $1$ 纳秒。若某算法需 $100$ 纳秒，另一算法只需 $3$ 纳秒，在不考虑内存消耗的前提下，显然后者更优。再比如，若某算法只需 $3$ 字节内存，另一算法需 $100$ 字节，在不考虑运行时间的情况下，前者更优。
+让我们通过三个简单例子理解算法：
 
-实际应用中，算法设计往往需要在运行时间和空间占用之间权衡。理想情况下，算法既快又省空间，但现实中常常需要根据具体需求做出取舍。例如，当程序运行速度要求较高时，可以适当增加空间消耗以换取更快的执行速度；反之，如果设备内存有限且对速度要求不高，则可以选择更节省空间的算法，即使牺牲一些运行时间。
+**例子1：出行方案**
+- **问题**：从上海到北京
+- **算法1**：飞机（快但贵）
+- **算法2**：高铁（适中）
+- **算法3**：汽车（慢但便宜）
 
-除了运行时间和空间占用，优秀的算法还应具备以下基本特性：
+**例子2：求和计算**
+- **问题**：计算1+2+...+100
+- **算法1**：循环累加
+- **算法2**：公式计算 `(1+100)×100÷2`
 
-1. **正确性**：算法能准确满足问题需求，程序运行无语法错误，能通过典型测试，达到预期目标。
-2. **可读性**：算法结构清晰，命名规范，注释恰当，便于理解、维护和后续修改。
-3. **健壮性**：算法能合理应对非法输入或异常操作，具备良好的容错能力。
+**例子3：数组排序**
+- **问题**：整数数组升序排列
+- **算法1**：冒泡排序
+- **算法2**：快速排序
 
-这三点是算法的基本要求，所有算法都必须满足。而我们评价一个算法是否优秀，通常最看重的还是其运行时间和空间占用两个方面。
+## 3. 现实应用
 
-## 3. 总结
+```mermaid
+graph TB
+    subgraph "🌍 现实生活中的数据结构与算法"
+        direction TB
 
-### 3.1 数据结构
+        subgraph "📱 日常应用场景"
+            direction TB
 
-数据结构通常分为 **逻辑结构** 和 **物理结构** 两大类。
+            A1[🔍 搜索引擎<br/>Google·百度]
+            A1 --> A1a[🕸️ 图结构: 网页链接关系<br/>🔍 算法: PageRank排名]
 
-- **逻辑结构**：描述数据元素之间的关系，主要包括：**集合结构**、**线性结构**、**树形结构** 和 **图形结构**。
-- **物理结构**：指数据在计算机中的实际存储方式，主要有：**顺序存储结构** 和 **链式存储结构**。
+            A2[📱 社交媒体<br/>微信·微博·抖音]
+            A2 --> A2a[🌐 图结构: 用户关系网络<br/>📊 算法: 推荐系统·信息流]
 
-逻辑结构强调数据元素之间的相互关系，而物理结构则关注这些关系在计算机内的具体实现。例如，线性表中的「栈」在逻辑上属于线性结构，元素之间是一对一的关系（除首尾元素外，每个元素有唯一前驱和后继）。在物理实现上，栈可以采用顺序存储（即 **顺序栈**，元素在内存中连续存放），也可以采用链式存储（即 **链式栈**，元素在内存中不一定连续，通过指针连接）。
+            A3[🗺️ 地图导航<br/>高德·百度地图]
+            A3 --> A3a[🕸️ 图结构: 道路交通网络<br/>🛣️ 算法: 最短路径·实时路况]
 
-### 3.2 算法
+            A4[🛒 电商平台<br/>淘宝·京东·拼多多]
+            A4 --> A4a[🌳 树结构: 商品分类目录<br/>🎯 算法: 商品推荐·价格排序]
+        end
 
-**算法** 是解决特定问题的有序操作步骤的集合。
+        subgraph "💼 技术实现场景"
+            direction TB
 
-一个算法应具备以下五个基本特性：**输入**、**输出**、**有穷性**、**确定性**、**可行性**。
+            B1[🎬 视频网站<br/>YouTube·B站·爱奇艺]
+            B1 --> B1a[📋 队列: 视频缓冲播放<br/>🤖 算法: 内容推荐·弹幕过滤]
 
-优秀的算法通常追求以下目标：**正确性**、**可读性**、**健壮性**、**更低的时间复杂度（运行时间更短）** 和 **更低的空间复杂度（占用内存更小）**。
+            B2[💾 操作系统<br/>Windows·macOS·Linux]
+            B2 --> B2a[📚 栈结构: 函数调用管理<br/>⚙️ 算法: 进程调度·内存管理]
 
-## 参考资料
+            B3[🏦 数据库系统<br/>MySQL·Oracle·MongoDB]
+            B3 --> B3a[🌳 B+树: 数据索引结构<br/>🔍 算法: 查询优化·事务处理]
 
+            B4[🎮 游戏开发<br/>王者荣耀·和平精英]
+            B4 --> B4a[🗺️ 图结构: 游戏地图·技能树<br/>🤖 算法: AI寻路·匹配系统]
+        end
+
+        subgraph "🏭 工业级应用"
+            direction TB
+
+            C1[☁️ 云计算服务<br/>阿里云·腾讯云·AWS]
+            C1 --> C1a[🔗 分布式结构: 服务器集群<br/>⚖️ 算法: 负载均衡·资源调度]
+
+            C2[🤖 人工智能<br/>ChatGPT·文心一言]
+            C2 --> C2a[🧠 神经网络: 多层神经元<br/>🎯 算法: 深度学习·自然语言处理]
+
+            C3[🔐 网络安全<br/>防火墙·杀毒软件]
+            C3 --> C3a[📊 哈希表: 病毒特征库<br/>🔍 算法: 模式匹配·加密解密]
+
+            C4[📈 金融系统<br/>支付宝·银行交易]
+            C4 --> C4a[⏱️ 时间序列: 交易记录<br/>📊 算法: 风控模型·实时计算]
+        end
+    end
+
+    subgraph "🍳 生活比喻"
+        direction LR
+
+        D1[👨‍🍳 做菜过程]
+        D1 --> D1a[🥬 数据结构 = 食材组织<br/>📝 算法 = 烹饪方法<br/>🍽️ 程序 = 最终菜品]
+
+        D2[📚 图书管理]
+        D2 --> D2a[📖 数据结构 = 书籍分类<br/>🔍 算法 = 查找方法<br/>📋 程序 = 管理系统]
+
+        D3[🚦 交通管理]
+        D3 --> D3a[🛣️ 数据结构 = 道路网络<br/>🚥 算法 = 信号控制<br/>📱 程序 = 导航系统]
+    end
+
+    classDef appStyle fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    classDef techStyle fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef industryStyle fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef lifeStyle fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef detailStyle fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+
+    class A1,A2,A3,A4 appStyle
+    class B1,B2,B3,B4 techStyle
+    class C1,C2,C3,C4 industryStyle
+    class D1,D2,D3 lifeStyle
+    class A1a,A2a,A3a,A4a,B1a,B2a,B3a,B4a,C1a,C2a,C3a,C4a,D1a,D2a,D3a detailStyle
+```
+
+## 4. 学习建议
+
+### 🎯 为什么要学习？
+
+1. **💪 提升编程能力**：优化代码效率，减少时间和空间复杂度
+2. **🧠 培养逻辑思维**：系统性解决问题的能力
+3. **🚀 职业发展**：技术面试和项目开发的核心技能
+4. **🔧 解决实际问题**：为复杂问题选择合适的数据结构和算法
+
+### 📚 学习路径
+
+```mermaid
+graph LR
+    A[基础概念] --> B[线性结构<br/>数组·链表·栈·队列]
+    B --> C[非线性结构<br/>树·图·哈希表]
+    C --> D[经典算法<br/>排序·查找·递归]
+    D --> E[高级算法<br/>动态规划·贪心·分治]
+    E --> F[实际项目应用]
+
+    classDef stepStyle fill:#e8f5e8,stroke:#4caf50,stroke-width:2px
+    class A,B,C,D,E,F stepStyle
+```
+
+### 🍳 类比记忆
+
+正如掌握食材和烹饪方法不等于能做美味佳肴，学会算法和数据结构也需要：
+
+- **🥬 数据结构** = 食材组织方式
+- **👨‍🍳 算法** = 烹饪方法和菜谱
+- **🍽️ 程序** = 最终的美味菜品
+- **⭐ 优化** = 色香味俱全的追求
+
+## 5. 总结
+
+### 核心要点
+
+- **📐 逻辑结构**：集合、线性、树形、图形 - 描述元素关系
+- **💾 物理结构**：顺序存储、链式存储 - 内存组织方式
+- **🧮 算法特性**：输入、输出、有穷性、确定性、可行性
+- **🎯 算法目标**：正确性、可读性、健壮性、高效性
+
+### 学习心得
+
+算法和数据结构是程序设计的基石。通过系统学习和持续实践，能够：
+
+1. 为问题选择最合适的数据结构
+2. 设计高效的算法解决方案
+3. 在时间和空间复杂度间做出权衡
+4. 编写出高质量、可维护的代码
+
+记住：**优秀的程序员不是天生的厨师，而是通过不断学习和实践成长起来的！** 🚀
+
+---
+
+*参考资料*
 - 【文章】[数据结构与算法 · 看云](https://www.kancloud.cn/zxliu/algorithm/2088786)
 - 【书籍】大话数据结构——程杰 著
 - 【书籍】趣学算法——陈小玉 著
