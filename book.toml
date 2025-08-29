@@ -72,6 +72,12 @@ custom = """
 <meta property="og:title" content="算法与数据结构学习指南">
 <meta property="og:description" content="全面的算法与数据结构学习资料">
 <link rel="icon" href="favicon.png" type="image/png">
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
 """
 
 [output.html.playground]
