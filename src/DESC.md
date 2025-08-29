@@ -1,6 +1,6 @@
 查看原作者更新文档： https://algo.itcharge.cn/
 
-# Test
+# 数学
 
 文本文本\\( \int x dx = \frac{x^2}{2} + C \\)文本文本
 
@@ -9,6 +9,10 @@
 文本文本$$ a = \frac{x^2}{2} \times C $$文本文本
 
 文本文本$fs$文本文本
+
+
+# 预处理命令
+
 ```bash
 Shell
 Bash script
@@ -17,6 +21,21 @@ Python3
 Node
 Rust
 ```
+
 <!-- cmdrun seq 1 10 -->
 
-<!-- cmdrun python3 codes/test.py -->
+<!-- cmdrun python3 tests/test.py -->
+
+<!-- cmdrun -0 echo hello world -->
+
+```diff
+<!-- cmdrun -0 diff tests/a.py tests/b.py -->
+```
+
+```diff
+<!-- cmdrun -1 diff tests/a.py tests/b.py -->
+```
+
+```bash
+<!-- cmdrun ls -l . -->
+```
