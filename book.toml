@@ -18,8 +18,8 @@ git-repository-icon = "fa-github"
 edit-url-template = "https://github.com/caoyang2002/AlgoNote/edit/main/src/{path}"
 
 # 主题设置
-default-theme = "navy"
-preferred-dark-theme = "coal"
+# default-theme = "navy"
+# preferred-dark-theme = "coal"
 curly-quotes = true
 mathjax-support = true
 copy-fonts = true

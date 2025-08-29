@@ -15,7 +15,7 @@ git remote add gitea http://192.168.5.101:8418/caoyang/AlgorithmPractices.git
 
 # 一次性推送到两个仓库
 git push origin main
-git push gitee  main
+git push gitea main
 
 ```
 ## 1. 本书简介
