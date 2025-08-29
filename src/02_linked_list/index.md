@@ -1,4 +1,4 @@
-## 本章内容
+## 链表
 
 - [2.1 链表基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/02_linked_list/02_01_linked_list_basic.md)
 - [2.2 链表排序](https://github.com/ITCharge/AlgoNote/tree/main/docs/02_linked_list/02_02_linked_list_sort.md)

@@ -1,4 +1,4 @@
-## 本章内容
+# 字符串
 
 - [4.1 字符串基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/04_string/04_01_string_basic.md)
 - [4.2 单模式串匹配](https://github.com/ITCharge/AlgoNote/tree/main/docs/04_string/04_02_string_single_pattern_matching.md)

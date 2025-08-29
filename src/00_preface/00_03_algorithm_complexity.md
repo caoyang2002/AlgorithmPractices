@@ -1,3 +1,5 @@
+# 算法复杂度
+
 ## 1. 算法复杂度简介
 
 > **算法复杂度（Algorithm complexity）**：用于衡量算法在输入规模为 $n$ 时所需的时间和空间资源。
@@ -189,7 +191,7 @@ def find_all_pairs(arr):
 ```python
 def binary_search(arr, target):
     left, right = 0, len(arr) - 1
-    
+
     while left <= right:
         mid = (left + right) // 2
         if arr[mid] == target:
@@ -218,17 +220,17 @@ def power_of_two(n):
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
-    
+
     mid = len(arr) // 2
     left = merge_sort(arr[:mid])   # 递归处理左半部分
     right = merge_sort(arr[mid:])  # 递归处理右半部分
-    
+
     return merge(left, right)      # 合并两个有序数组
 
 def merge(left, right):
     result = []
     i = j = 0
-    
+
     while i < len(left) and j < len(right):
         if left[i] <= right[j]:
             result.append(left[i])
@@ -236,7 +238,7 @@ def merge(left, right):
         else:
             result.append(right[j])
             j += 1
-    
+
     result.extend(left[i:])
     result.extend(right[j:])
     return result
@@ -261,7 +263,7 @@ def generate_subsets(arr):
             current.append(arr[i])
             backtrack(i + 1, current)
             current.pop()
-    
+
     result = []
     backtrack(0, [])
     return result
@@ -281,12 +283,12 @@ def generate_permutations(arr):
         if start == len(arr):
             result.append(arr[:])
             return
-        
+
         for i in range(start, len(arr)):
             arr[start], arr[i] = arr[i], arr[start]  # 交换
             backtrack(start + 1)                     # 递归
             arr[start], arr[i] = arr[i], arr[start]  # 恢复
-    
+
     result = []
     backtrack(0)
     return result
@@ -314,7 +316,7 @@ def generate_permutations(arr):
 由于同一算法在不同输入下的表现可能差异很大，我们通常从三个角度分析时间复杂度：
 
 - **最佳时间复杂度**：最理想输入下的时间复杂度
-- **最坏时间复杂度**：最差输入下的时间复杂度  
+- **最坏时间复杂度**：最差输入下的时间复杂度
 - **平均时间复杂度**：随机输入下的期望时间复杂度
 
 **示例**：在数组中查找目标值

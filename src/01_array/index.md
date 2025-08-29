@@ -1,4 +1,4 @@
-## 本章内容
+# 数组
 
 - [1.1 数组基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/01_array/01_01_array_basic.md)
 - [1.2 数组排序](https://github.com/ITCharge/AlgoNote/tree/main/docs/01_array/01_02_array_sort.md)

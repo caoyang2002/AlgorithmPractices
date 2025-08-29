@@ -1,4 +1,4 @@
-## 本章内容
+# 树
 
 - [5.1 树与二叉树基础](https://github.com/ITCharge/AlgoNote/tree/main/docs/05_tree/05_01_tree_basic.md)
 - [5.2 二叉树的遍历](https://github.com/ITCharge/AlgoNote/tree/main/docs/05_tree/05_02_binary_tree_traverse.md)

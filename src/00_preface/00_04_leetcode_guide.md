@@ -1,3 +1,5 @@
+# LeetCode 入门与攻略
+
 ## 1. LeetCode 是什么
 
 **「LeetCode」** 是一个在线编程评测平台，主要包含算法、数据库、Shell、多线程等题目，其中以算法题目为主。LeetCode 上有 $3000+$ 道编程问题，支持 $16+$ 种编程语言，还有一个活跃的社区用于技术交流。我们可以通过解决 LeetCode 题库中的问题来练习编程技能，以及提高算法能力。
@@ -144,10 +146,10 @@ class Solution:
 - **数据结构**：数组、字符串、链表、树（如二叉树）等。
 - **算法**：分治、贪心、回溯、动态规划等。
 
-这个阶段推荐看一些经典的算法基础书来进行学习。这里推荐一下我看过的感觉不错的算法书： 
+这个阶段推荐看一些经典的算法基础书来进行学习。这里推荐一下我看过的感觉不错的算法书：
 
 - 【书籍】[算法（第 4 版）- 谢路云 译](https://book.douban.com/subject/19952400/)
-- 【书籍】[大话数据结构 - 程杰 著](https://book.douban.com/subject/6424904/) 
+- 【书籍】[大话数据结构 - 程杰 著](https://book.douban.com/subject/6424904/)
 - 【书籍】[趣学算法 - 陈小玉 著](https://book.douban.com/subject/27109832/)
 - 【书籍】[算法图解 - 袁国忠 译](https://book.douban.com/subject/26979890/)
 - 【书籍】[算法竞赛入门经典（第 2 版） - 刘汝佳 著](https://book.douban.com/subject/25902102/)
@@ -256,4 +258,3 @@ LeetCode 是一个在线编程练习平台，主要用于提升算法和编程�
 - 【文章】[LeetCode 帮助中心 - 力扣（LeetCode）](https://support.leetcode-cn.com/hc/)
 - 【回答】[刷 leetcode 使用 python 还是 c++？ - 知乎](https://www.zhihu.com/question/319448129)
 - 【回答】[刷完 LeetCode 是什么水平？能拿到什么水平的 offer？ - 知乎](https://www.zhihu.com/question/32019460)
-

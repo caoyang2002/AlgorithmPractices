@@ -1019,3 +1019,6 @@
     - [面试题 链表求和](solutions/interviews/sum-lists-lcci.md)
     - [面试题 单词频率](solutions/interviews/words-frequency-lcci.md)
     - [面试题 零矩阵](solutions/interviews/zero-matrix-lcci.md)
+
+---
+**统计**: 共 11 个目录，998 个文件

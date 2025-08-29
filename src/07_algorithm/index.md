@@ -1,4 +1,4 @@
-## 本章内容
+# 算法
 
 - [7.1 枚举算法](https://github.com/ITCharge/AlgoNote/tree/main/docs/07_algorithm/07_01_enumeration_algorithm.md)
 - [7.2 递归算法](https://github.com/ITCharge/AlgoNote/tree/main/docs/07_algorithm/07_02_recursive_algorithm.md)

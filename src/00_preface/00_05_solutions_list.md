@@ -1032,5 +1032,3 @@
 | [面试题 17.14. 最小K个数](https://leetcode.cn/problems/smallest-k-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/smallest-k-lcci.md) | 数组、分治、快速选择、排序、堆（优先队列） | 中等 |
 | [面试题 17.15. 最长单词](https://leetcode.cn/problems/longest-word-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/longest-word-lcci.md) | 字典树、数组、哈希表、字符串 | 中等 |
 | [面试题 17.17. 多次搜索](https://leetcode.cn/problems/multi-search-lcci/) | [题解](https://github.com/ITCharge/AlgoNote/tree/main/docs/solutions/interviews/multi-search-lcci.md) | 字典树、数组、哈希表、字符串、字符串匹配、滑动窗口 | 中等 |
-
-
