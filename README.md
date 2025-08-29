@@ -1,3 +1,10 @@
+# 算法笔记
+
+```bash
+cargo install mdbook
+mdbook serve
+```
+
 ## 1. 本书简介
 
 本书不仅仅只是一本算法题解书，更是一本算法与数据结构基础知识的讲解书。
