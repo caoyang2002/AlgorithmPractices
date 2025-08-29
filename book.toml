@@ -12,10 +12,10 @@ create-missing = true
 
 [output.html]
 # 站点设置
-site-url = "https://caoyang2002.github.io/AlgoNote/"
-git-repository-url = "https://github.com/caoyang2002/AlgoNote"
+site-url = "https://caoyang2002.github.io/AlgorithmPractices/"
+git-repository-url = "https://github.com/caoyang2002/AlgorithmPractices"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/caoyang2002/AlgoNote/edit/main/src/{path}"
+edit-url-template = "https://github.com/caoyang2002/AlgorithmPractices/edit/main/{path}"
 
 # 主题设置
 # default-theme = "navy"
@@ -53,7 +53,7 @@ title-expand-subsections = true
 
 # 导航栏设置
 [output.html.nav]
-collapse = false
+collapse = true
 sticky = true
 
 # 打印设置（修正：只使用一种格式）

@@ -170,8 +170,8 @@ def generate_index():
 
     # 生成 TOC.md 文件
     with open("src/TOC.md", "w", encoding="utf-8") as f:
-        f.write("# 算法练习\n")
-        f.write("\n")
+        f.write("# 算法与数据结构实践练习\n")
+
 
         # 写入根目录文件
         if root_files:
@@ -182,6 +182,7 @@ def generate_index():
         for dir_name in sorted(directories.keys()):
             dir_data = directories[dir_name]
 
+            f.write("\n")
             # 写入目录标题（一级标题）
             f.write(f"# {dir_data['display_name']}\n")
 
