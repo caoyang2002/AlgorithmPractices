@@ -158,7 +158,7 @@ def generate_index():
     directories = {}
 
     for item in src_path.iterdir():
-        if item.is_file() and item.suffix == '.md' and item.name != 'toc.md':
+        if item.is_file() and item.suffix == '.md' and item.name != 'TOC.md':
             title = extract_first_heading(item)
             root_files.append((title, item.name))
         elif item.is_dir() and not item.name.startswith('.'):
@@ -168,8 +168,8 @@ def generate_index():
                 directories[item.name] = dir_data
                 print(f"   显示名称: {dir_data['display_name']}")
 
-    # 生成 toc.md 文件
-    with open("src/toc.md", "w", encoding="utf-8") as f:
+    # 生成 TOC.md 文件
+    with open("src/TOC.md", "w", encoding="utf-8") as f:
         f.write("# 算法练习\n")
         f.write("\n")
 
@@ -209,7 +209,7 @@ def main():
     try:
         print("🚀 开始生成总索引...")
         generate_index()
-        print("✅ 总索引生成完成！文件保存在 src/toc.md")
+        print("✅ 总索引生成完成！文件保存在 src/TOC.md")
     except Exception as e:
         print(f"❌ 生成过程中出错: {e}")
         import traceback
