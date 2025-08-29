@@ -4,13 +4,14 @@
 cargo install mdbook
 cargo install mdbook-cmdrun
 mdbook serve
+# mdbook serve ./ -p 8000 -n 127.0.0.1
 ```
 
 # push
 
 ```bash
 # 假设已有一个 origin
-git remote add gitee git@gitee.com:user/project.git
+git remote add gitea http://192.168.5.101:8418/caoyang/AlgorithmPractices.git
 
 # 一次性推送到两个仓库
 git push origin main
