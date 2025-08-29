@@ -4,10 +4,8 @@
 cargo install mdbook
 cargo install mdbook-cmdrun
 mdbook serve
-
 ```
 
-# 
 
 
 
