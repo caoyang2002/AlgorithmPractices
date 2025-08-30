@@ -28,13 +28,16 @@ copy-fonts = true
 # 目录折叠设置
 fold.enable = true
 fold.level = 0     # 默认折叠到第二级
-# search.limit-results = 50  # 增加搜索结果数量
-# title-expand-subsections = false  # 避免标题过长
-# 代码块设置
-# code.hidelines = "~"
-additional-js = ["mermaid.min.js", "mermaid-init.js", "theme/pagetoc.js"]
 
-additional-css = ["theme/pagetoc.css"]
+# 代码块设置
+additional-js = [
+    "mermaid.min.js",
+    "mermaid-init.js",
+    "theme/pagetoc.js",
+    "theme/custom-nav.js",
+]
+
+additional-css = ["theme/pagetoc.css", "theme/custom.css"]
 
 
 [output.html.search]
@@ -52,9 +55,6 @@ copy-js = true          # 包括用于搜索的 Javascript 代码
 # 页面标题设置
 title-expand-subsections = true
 
-# 额外的CSS和JS（如果有的话）
-# additional-css = ["theme/custom.css"]
-# additional-js = ["theme/custom.js"]
 
 # 导航栏设置
 [output.html.nav]

@@ -1,0 +1,260 @@
+/* 侧边导航按钮 - 改为底部悬浮按钮 */
+.nav-chapters {
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 2rem;
+    top: unset;
+    margin: 0;
+    width: auto;
+    max-width: 200px;
+    min-width: 120px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    flex-direction: row;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-chapters:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark) {
+    .nav-chapters {
+        background: rgba(30, 30, 30, 0.95);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: #e0e0e0;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-chapters:hover {
+        background: rgba(40, 40, 40, 1);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* 导航包装器 */
+.nav-wrapper {
+    margin-block-start: 0;
+    margin-bottom: 2rem;
+    display: none;
+    background: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    pointer-events: none;
+}
+
+/* 移动端导航按钮 */
+.mobile-nav-chapters {
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    min-width: 100px;
+    max-width: 180px;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mobile-nav-chapters:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .mobile-nav-chapters {
+        background: rgba(30, 30, 30, 0.95);
+        border-color: rgba(255, 255, 255, 0.1);
+        color: #e0e0e0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-nav-chapters:hover {
+        background: rgba(40, 40, 40, 1);
+        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* 上一页按钮定位 */
+.previous {
+    float: none;
+    /*left: 1.5rem;*/
+}
+
+.previous::before {
+    content: "← ";
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+/* 下一页按钮定位 */
+.next {
+    float: none;
+    right: 1.5rem;
+    left: unset;
+}
+
+.next::after {
+    content: " →";
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+
+/* RTL 布局支持 */
+[dir="rtl"] .previous {
+    float: none;
+    right: 1.5rem;
+    left: unset;
+}
+
+[dir="rtl"] .previous::before {
+    content: " →";
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+[dir="rtl"] .next {
+    float: none;
+    left: 1.5rem;
+    right: unset;
+}
+
+[dir="rtl"] .next::after {
+    content: "← ";
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+/* FontAwesome 图标支持 */
+/*[dir="rtl"] .previous i.fa-angle-left:before {
+    content: "\f105";
+}
+
+[dir="rtl"] .next i.fa-angle-right:before {
+    content: "\f104 NExt";
+}*/
+
+/* 响应式媒体查询 */
+@media only screen and (max-width: 1080px) {
+    .nav-wide-wrapper {
+        display: none;
+    }
+    .nav-wrapper {
+        display: block;
+    }
+
+    /* 调整移动端按钮样式 */
+    .mobile-nav-chapters {
+        font-size: 0.9rem;
+        min-width: 80px;
+        max-width: 140px;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .previous {
+        left: 1rem;
+    }
+
+    .next {
+        right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    #sidebar-toggle-anchor:checked ~ .page-wrapper .nav-wide-wrapper {
+        display: none;
+    }
+    #sidebar-toggle-anchor:checked ~ .page-wrapper .nav-wrapper {
+        display: block;
+    }
+}
+
+/* 额外的小屏幕优化 */
+@media only screen and (max-width: 768px) {
+    .nav-chapters {
+        bottom: 1rem;
+        min-width: 100px;
+        max-width: 160px;
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .mobile-nav-chapters {
+        min-width: 70px;
+        max-width: 120px;
+        padding: 0.5rem 0.7rem;
+        font-size: 0.85rem;
+    }
+
+    .previous {
+        left: 0.8rem;
+    }
+
+    .next {
+        right: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-chapters {
+        bottom: 0.8rem;
+        min-width: 80px;
+        max-width: 130px;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .mobile-nav-chapters {
+        min-width: 60px;
+        max-width: 100px;
+        padding: 0.4rem 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .previous {
+        left: 0.6rem;
+    }
+
+    .next {
+        right: 0.6rem;
+    }
+}
