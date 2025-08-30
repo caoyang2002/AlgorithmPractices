@@ -44,7 +44,7 @@ Node
 Rust
 ```
 
-```rust
+```rust,editable
 fn main() {
     println!("Hello from rust");
 }

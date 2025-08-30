@@ -1,0 +1,12 @@
+.mdbook-alerts {
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    border-left: 0.55em solid var(--mdbook-alerts-color);
+    background-color: rgba(219, 232, 255, 1);
+    border-radius: 4px;
+}
+blockquote {
+    background-color: rgba(196, 255, 205, 1);
+    border-style: 0.25em dashed #00ff27;
+    border-radius: 4px;
+}

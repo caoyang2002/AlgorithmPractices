@@ -1,19 +1,24 @@
 # 算法与数据结构实践练习
 - [难度分级](DD.md)
-- [难度分级](DD_sorted.md)
+- [难度分级排序](DD_sorted.md)
 - [数学](DESC.md)
 - [算法与数据结构实践练习](SUMMARY.md)
 
 # 前言
 - [前言](00_preface/index.md)
-  - [创作历程](00_preface/00_01_preface.md)
+  - [序言](00_preface/00_01_preface.md)
   - [算法与数据结构](00_preface/00_02_data_structures_algorithms.md)
   - [算法复杂度](00_preface/00_03_algorithm_complexity.md)
-  - [LeetCode 入门与攻略](00_preface/00_04_leetcode_guide.md)
   - [LeetCode 题解（已完成 道）](00_preface/00_05_solutions_list.md)
   - [LeetCode 题解（按分类排序，推荐刷题列表 ）](00_preface/00_06_categories_list.md)
   - [LeetCode 面试最常考 题（按分类排序）](00_preface/00_07_interview_100_list.md)
   - [LeetCode 面试最常考 题（按分类排序）](00_preface/00_08_interview_200_list.md)
+
+
+# 语法基础
+- [语法基础](00_syntax/index.md)
+    - [Python数据结构与算法完全指南](00_syntax/Python/00_01_data_structure.md)
+    - [算法](00_syntax/Python/00_02_algorithm.md)
 
 
 # 数组
@@ -34,6 +39,11 @@
   - [二分查找细节](01_array/01_14_array_binary_search_02.md)
   - [双指针简介](01_array/01_15_array_two_pointers.md)
   - [滑动窗口算法简介](01_array/01_16_array_sliding_window.md)
+
+
+# 入门
+- [入门](01_getting_started/index.md)
+  - [算法简易入门](01_getting_started/01_01_algorithms_guide.md)
 
 
 # 链表
@@ -143,7 +153,7 @@
 # LeeCode 算法详解释
 - [LeeCode 算法详解释](solutions/index.md)
   - [零](solutions/0001-0099/index.md)
-    - [两数之和](solutions/0001-0099/1-add-two-inteqers.md)
+    - [两数之和](solutions/0001-0099/0001-two-sum.md)
     - [最接近的三数之和](solutions/0001-0099/3sum-closest.md)
     - [三数之和](solutions/0001-0099/3sum.md)
     - [四数之和](solutions/0001-0099/4sum.md)

@@ -12,6 +12,7 @@ mdbook-pagetoc
 cargo install mdbook-katex
 cargo install mdbook-alerts
 
+mdbook build
 mdbook serve
 ```
 

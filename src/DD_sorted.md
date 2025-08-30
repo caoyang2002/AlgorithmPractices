@@ -1,4 +1,4 @@
-# 难度分级
+# 难度分级排序
 
 ### LeetCode Algorithm
 
@@ -577,6 +577,3 @@
 |---| ----- | -------- | ---------- |
 |1|[Search in a big sorted array](http://www.lintcode.com/en/problem/search-in-a-big-sorted-array/)|[Java](./algorithms/java/src/searchInABigSortedArray/searchInABigSortedArray.java)|Medium|
 |2|[Search Range in Binary Search Tree](http://www.lintcode.com/en/problem/search-range-in-binary-search-tree/) | [Java](./algorithms/java/src/searchRangeInBinarySearchTree/searchRangeInBinarySearchTree.java)|Medium|
-
-
-

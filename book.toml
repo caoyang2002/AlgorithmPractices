@@ -31,13 +31,16 @@ fold.level = 0     # 默认折叠到第二级
 
 # 代码块设置
 additional-js = [
-    "mermaid.min.js",
-    "mermaid-init.js",
+    "theme/mermaid.min.js",
+    "theme/mermaid-init.js",
     "theme/pagetoc.js",
-    "theme/custom-nav.js",
 ]
 
-additional-css = ["theme/pagetoc.css", "theme/custom.css"]
+additional-css = [
+    "theme/pagetoc.css",
+    "theme/nav-chapters.css",
+    "theme/alerts-note.css",
+]
 
 
 [output.html.search]
